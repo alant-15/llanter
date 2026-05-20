@@ -1,6 +1,7 @@
 body {
+  padding-top: 70px;
   font-family: Verdana, sans-serif;
-  background: purple;
+  background: rgb(244, 179, 244);
   color: #222;
   margin: 0;
   line-height: 1.7;
@@ -12,6 +13,37 @@ body {
   margin: 80px auto;
   padding: 0 24px;
   text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #a3ea51;
 }
 
 h1 {
