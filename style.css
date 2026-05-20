@@ -46,6 +46,28 @@ nav a:hover {
   color: #a3ea51;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.header-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
