@@ -138,3 +138,33 @@ p{
 .social-links a:hover {
     color: #ff9c1b;
 }
+
+.collapse-section {
+    margin-top: 20px;
+}
+
+.collapse-section summary {
+    margin-top: 3rem;
+    color: #00755c;
+    text-align: center;
+
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+.collapse-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.collapse-section summary::after {
+  content: "▶︎ ";
+  color: #6b67ff;
+}
+
+.collapse-section[open] summary::after {
+  content: "▼ ";
+}
